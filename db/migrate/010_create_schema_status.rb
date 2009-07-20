@@ -1,0 +1,19 @@
+class CreateSchemaStatus < ActiveRecord::Migration
+  def self.up
+    create_table :schema_status, :primary_key => :status_id do |t|
+      t.column :debtor,     :boolean, :null => false
+      t.column :debtor_log, :boolean, :null => false
+      t.column :debt,       :boolean, :null => false
+      t.column :debt_log,   :boolean, :null => false
+
+      t.timestamps
+    end
+
+#Chaves Estrangeiras
+      execute "ALTER TABLE schema_status ADD CONSTRAINT fk_schema_status_status FOREIGN KEY (status_id) REFERENCES status(id)"
+  end
+
+  def self.down
+    drop_table :schema_status
+  end
+end

@@ -1,0 +1,3 @@
+class TypeDeal < ActiveRecord::Base
+  has_many :before_deal
+end

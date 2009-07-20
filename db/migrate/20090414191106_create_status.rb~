@@ -1,0 +1,20 @@
+class CreateStatus < ActiveRecord::Migration
+  def self.up
+    create_table :status, :primary_key => :id do |t|
+      t.column :id,          :integer, :null => :false
+      t.column :description, :string,  :null => :false
+      t.column :finale,      :string,  :null => :false
+      t.column :date,        :string,  :default => :null
+      t.column :color,       :string,  :default => "#FFFFFF"
+      t.column :priority,    :integer, :null => :false
+
+      t.column :profile_id, :integer,  :null => :false
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :status
+  end
+end

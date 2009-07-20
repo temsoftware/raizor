@@ -1,0 +1,7 @@
+<div>	
+    <h3><%=debtor.name%></h3>
+    <h5>CPF / CNPJ: <%=debtor.cpf_cnpj%></h5>
+    <p>Status: <%=debtor.status_id%></p>
+    <p>Pai: <%=debtor.father%></p>
+    <p>Mae: <%=debtor.mother%></p>
+</div>

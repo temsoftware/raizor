@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: raizor
+  pool: 5
+  username: root
+  password: maria123
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: raizor_test
+  pool: 5
+  username: root
+  password: maria123
+  host: localhost
+

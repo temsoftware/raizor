@@ -1,0 +1,11 @@
+<h2>Raizor login</h2>
+
+  <%=flash[:notice]%>
+
+<%=form_tag sessions_path, :method => :post%>
+  <label>username:</label>
+  <%=text_field "login", "username", :maxlenght => "10", :size => "9"%>
+  <label>password:</label>
+  <%=password_field "login", "password", :maxlenght => "8", :size => "7"%>
+  <button type="submit">Sign in</button>
+

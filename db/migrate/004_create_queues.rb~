@@ -1,0 +1,14 @@
+class CreateQueues < ActiveRecord::Migration
+  def self.up
+    create_table :queues do |t|
+      t.column :description, :string, :null => false
+      t.timestamps
+    end
+#Chaves Estrangeiras
+      execute "ALTER TABLE queues ADD CONSTRAINT fk_queues_status FOREIGN KEY (status_id) REFERENCES status(id)"
+  end
+
+  def self.down
+    drop_table :queues
+  end
+end

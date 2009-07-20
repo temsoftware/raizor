@@ -1,0 +1,22 @@
+class CreateBeforeDeals < ActiveRecord::Migration
+  def self.up
+    create_table :before_deals do |t|
+      t.column :date, :datetime,         :null => false
+      t.column :plot_number,  :integer,  :null => false
+      t.column :plot_date,    :datetime, :null => false
+      t.column :plot_first,   :float,    :null => false
+      t.column :plot_amount,  :float,    :null => false
+      t.column :iof_amount,   :float,    :null => false
+      t.column :debtor_email, :string
+
+      t.column :debtor_id, :integer
+      t.column :debt_id,   :integer
+      t.column :type_deal, :integer
+    end
+
+  end
+
+  def self.down
+    drop_table :before_deals
+  end
+end
