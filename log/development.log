@@ -40057,3 +40057,744 @@ Rendering debtors/show
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
 Completed in 124ms (View: 100, DB: 9) | 200 OK [http://localhost/debtors/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:32:38) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (8.2ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 126ms (View: 83, DB: 12) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:33:10) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 86ms (View: 60, DB: 6) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:33:58) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 74ms (View: 55, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:34:07) [GET]
+  [4;35;1mDebtor Load (2.5ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 72ms (View: 45, DB: 7) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:35:51) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 70ms (View: 41, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2009-07-23 18:35:55) [GET]
+  Parameters: {"id"=>"logout"}
+
+ActionController::UnknownAction (No action responded to show. Actions: authenticate, create, destroy, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:36:02) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 56ms (View: 33, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:36:22) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 140ms (View: 40, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2009-07-23 18:36:24) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to show. Actions: authenticate, create, destroy, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:36:28) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 87ms (View: 54, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:36:48) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 118ms (View: 103, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:37:35) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 84ms (View: 57, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2009-07-23 18:37:37) [GET]
+  Parameters: {"id"=>"logout"}
+
+ActionController::UnknownAction (No action responded to show. Actions: authenticate, create, destroy, logout, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:38:30) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 185ms (View: 160, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:38:43) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 58ms (View: 41, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:38:54) [GET]
+  [4;35;1mDebtor Load (0.3ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 123ms (View: 99, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#2 (for 127.0.0.1 at 2009-07-23 18:38:58) [POST]
+  Parameters: {"authenticity_token"=>"Kvv4mMn12qowOVV6ABnuTbI7O15segVgmutJkB9JVqo="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: authenticate, create, destroy, logout, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:39:11) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+
+ActionView::TemplateError (undefined local variable or method `desroy' for #<ActionView::Base:0xb688daa4>) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => desroy%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:39:17) [GET]
+  [4;35;1mDebtor Load (1.4ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+
+ActionView::TemplateError (undefined local variable or method `destroy' for #<ActionView::Base:0xb67116e4>) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => destroy%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (182.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:39:24) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 83ms (View: 57, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#2 (for 127.0.0.1 at 2009-07-23 18:39:39) [POST]
+  Parameters: {"authenticity_token"=>"Kvv4mMn12qowOVV6ABnuTbI7O15segVgmutJkB9JVqo="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: authenticate, create, destroy, logout, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:39:54) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["sessions", :id] - are they all satisfied?) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(), :method => :destroy%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:40:09) [GET]
+  [4;35;1mDebtor Load (6.7ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (18.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["sessions", :id] - are they all satisfied?) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path, :method => :destroy%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (170.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:42:36) [GET]
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mStatus Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mTypeStatus Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_status`[0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 76ms (View: 50, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-23 18:42:39) [DELETE]
+  Parameters: {"authenticity_token"=>"Kvv4mMn12qowOVV6ABnuTbI7O15segVgmutJkB9JVqo=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:42:39) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show", :id=>nil}, expected: {:controller=>"sessions", :action=>"show"}, diff: {:id=>nil}) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:42:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show", :id=>nil}, expected: {:controller=>"sessions", :action=>"show"}, diff: {:id=>nil}) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:42:51) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show", :id=>nil}, expected: {:controller=>"sessions", :action=>"show"}, diff: {:id=>nil}) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:43:50) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-23 18:44:00) [POST]
+  Parameters: {"authenticity_token"=>"tTCn31Q98guZ3BRfMBPlC7CPBSd/9mT2sOkx009wdK8=", "login"=>{"username"=>"asd", "password"=>"ad"}}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'Asd' and password = 'ad') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (session_url failed to generate from {:controller=>"sessions", :action=>"show", :id=>nil}, expected: {:controller=>"sessions", :action=>"show"}, diff: {:id=>nil}) on line #20 of app/views/layouts/application.html.erb:
+17:       <li><a href="#">Menu</a></li>
+18:       <li><a href="#">Menu</a></li>
+19:       <li><a href="#">Menu</a></li>
+20:       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
+21:     </ul>
+22:   </div>
+23:   <%=yield%>
+
+    (eval):16:in `session_path'
+    app/views/layouts/application.html.erb:20
+    app/controllers/sessions_controller.rb:25:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (149.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-23 18:44:19) [POST]
+  Parameters: {"authenticity_token"=>"tTCn31Q98guZ3BRfMBPlC7CPBSd/9mT2sOkx009wdK8=", "login"=>{"username"=>"asd", "password"=>"ad"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Asd' and password = 'ad') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-23 18:44:22) [POST]
+  Parameters: {"authenticity_token"=>"tTCn31Q98guZ3BRfMBPlC7CPBSd/9mT2sOkx009wdK8=", "login"=>{"username"=>"asd", "password"=>"ad"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'Asd' and password = 'ad') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 28ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-23 18:44:24) [POST]
+  Parameters: {"authenticity_token"=>"tTCn31Q98guZ3BRfMBPlC7CPBSd/9mT2sOkx009wdK8=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:44:25) [GET]
+  [4;36;1mDebtor Load (0.3ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (6.6ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.2ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 103ms (View: 70, DB: 11) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-23 18:44:28) [DELETE]
+  Parameters: {"authenticity_token"=>"tTCn31Q98guZ3BRfMBPlC7CPBSd/9mT2sOkx009wdK8=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:44:28) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-23 18:44:33) [POST]
+  Parameters: {"authenticity_token"=>"TQcj+tMOIJMY1WJi74HRX8SuQ2bCi7mD6LD4jhO8QQc=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:44:33) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 75ms (View: 50, DB: 5) | 200 OK [http://localhost/debtors]

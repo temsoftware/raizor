@@ -17,7 +17,7 @@
       <li><a href="#">Menu</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
+      <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
     </ul>
   </div>
   <%=yield%>

@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   skip_before_filter :authenticate
 
   def new
+    render :layout => "login"
   end
 
   def create
@@ -14,15 +15,19 @@ class SessionsController < ApplicationController
         session[:logged] = true
         session[:id] = @user.id
         session[:login] = @user.login
-        render :controller => "debtor"
+        redirect_to debtors_path
       else
         flash[:notice] = "Seu usuario encontrasse bloqueado. Entre em contato com o Administrador do sistema."
-        render :action => "new"
+        render :action => "new", :layout => "login"
       end
     else
       flash[:notice] = "Usuario e/ou senha invalidos. Verifique e tente novamente."
-      render :action => "new"
+      render :action => "new", :layout => "login"
     end
+  end
+
+  def logout
+    destroy
   end
 
   def destroy
