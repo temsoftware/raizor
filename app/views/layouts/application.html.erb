@@ -5,6 +5,26 @@
     <%=javascript_include_tag :defaults%>
   </head>
   <body>
-    <%=yield%>
+  <h1>EMPLACA ASSESSORIA</h1>
+<div id="container">
+  <div id="navegacao">
+    <ul>
+      <li><%=link_to "Lista de Devedores", debtors_path%></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+    </ul>
+  </div>
+  <%=yield%>
+</div>
+    
+	<div id="footer">
+		Copyright &copy; Raizor 2009 - Desenvolvido por TEM Software
+	</div>
   </body>
 </html>

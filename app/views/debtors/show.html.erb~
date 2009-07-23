@@ -1,61 +1,82 @@
-<div class="table">
+	<div id="menu">
     <table class="mytable">
       <tr>
-        <th class="specalt" colspan="3"><%=@debtor.id%> - <%=@debtor.name%></th>
+        <th class="spec">Selecione um status</th>
+      </tr>
+
+      <%form_for @debtor do |status|%>
+        <tr>
+          <th class="spec"><%=status.select :status_id, Status.find(:all, :conditions =>  ["profile_id >= ?", session[:id]]).collect { |f| [ f.description, f.id ] }, {}, { :class => "input" } %></th>
+       </tr>
+
+       <tr>
+         <th class="spec"><button type="submit" class = "input">ok</button></td>
+       </tr>
+      <% end %>
+    </table>
+  </div>
+	
+
+  <div id="contents">
+  <div class="table">
+      <table class="mytable">
+        <tr>
+          <th class="specalt" colspan="3"><%=@debtor.id%> - <%=@debtor.name%> (<%=@debtor.debtor_type%>)</th>
+        </tr>
+
+        <tr> 
+          <th class="spec">Cpf / Cnpj</th>
+          <th class="spec">Endereço</th>
+          <th class="spec">Cidade</th>
+          <th class="spec">Estado</th>
+          <th class="spec">Pai</th>
+          <th class="spec">Mae</th>
+          <th class="spec">Status</th>
+        </tr>
+
+        <tr>
+          <td class="alt"><%=@debtor.cpf_cnpj%></td>
+          <td class="alt"><%=@debtor.address%></td>
+          <td class="alt"><%=@debtor.city%></td>
+          <td class="alt"><%=@debtor.state%></td>
+          <td class="alt"><%=@debtor.father%></td>
+          <td class="alt"><%=@debtor.mother%></td>
+          <td bgcolor=<%=@debtor.status.color%>><%=@debtor.status.description%></td>
+        </tr>
+      </table>
+  </div>
+
+  <div class="table">
+    <table class="mytable">
+      <tr>
+        <th class="specalt" colspan="2">Dividas</th>
       </tr>
 
       <tr> 
-        <th class="spec">Cpf / Cnpj</th>
-        <th class="spec">Tipo Pessoa</th>
-        <th class="spec">Endereço</th>
-        <th class="spec">Cidade</th>
-        <th class="spec">Estado</th>
-        <th class="spec">Pai</th>
-        <th class="spec">Mae</th>
+        <th class="spec">Vencimento</th>
+        <th class="spec">Vlr.Original</th>
+        <th class="spec">Vlr.Corrigido</th>
+        <th class="spec">Contrato</th>
+        <th class="spec">Modalidade</th>
+        <th class="spec">Agencia</th>
+        <th class="spec">Comissao</th>
+        <th class="spec">Tipo Status</th>
       </tr>
 
-      <tr>
-        <td class="alt"><%=@debtor.cpf_cnpj%></td>
-        <td class="alt"><%=@debtor.debtor_type%></td>
-        <td class="alt"><%=@debtor.address%></td>
-        <td class="alt"><%=@debtor.city%></td>
-        <td class="alt"><%=@debtor.state%></td>
-        <td class="alt"><%=@debtor.father%></td>
-        <td class="alt"><%=@debtor.mother%></td>
-      </tr>
+      <% @debtor.debt.each do |item| %>
+        <tr>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.amount%></td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.contract%></td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.user.name%></td>
+          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+        </tr>
+      <% end %>
     </table>
-</div>
+  </div>
 
-<div class="table">
-  <table class="mytable">
-    <tr>
-      <th class="specalt" colspan="2">Dividas</th>
-    </tr>
+	</div>
 
-    <tr> 
-      <th class="spec">Vencimento</th>
-      <th class ="spec">Vlr.Original</th>
-      <th class="spec">Vlr.Corrigido</th>
-      <th class="spec">Contrato</th>
-      <th class="spec">Modalidade</th>
-      <th class="spec">Agencia</th>
-      <th class="spec">Comissao</th>
-      <th class="spec">Status</th>
-      <th class="spec">Tipo Status</th>
-    </tr>
-
-    <% @debtor.debt.each do |item| %>
-      <tr>
-        <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
-        <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
-        <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
-        <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
-        <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
-        <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
-        <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
-        <td bgcolor=<%=item.status.color%>><%=item.status.description%></td>
-        <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
-      </tr>
-    <% end %>
-  </table>
-</div>

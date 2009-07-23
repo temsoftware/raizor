@@ -8,7 +8,7 @@ class DebtorsController < ApplicationController
   end
 
   def mostra
-    @mostrar = params[:debt]
+    @mostrar = params[:lista]
     render :partial => "lista"
   end
 end

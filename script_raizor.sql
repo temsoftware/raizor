@@ -60,11 +60,11 @@ insert into status (id, description, finale, date, color, priority, profile_id, 
 insert into status (id, description, finale, date, color, priority, profile_id, type_status_id)
     values (212, "RECADO", false, true, "#FFFF00", 2, 6, 4);
 insert into status (id, description, finale, date, color, priority, profile_id, type_status_id)
-    values (208, "NOVO TELEFONE OBTIDO", false, false, "#A020F0", 3, 8, 12);
+    values (208, "NOVO TELEFONE", false, false, "#A020F0", 3, 8, 12);
 insert into status (id, description, finale, date, color, priority, profile_id, type_status_id)
     values (403, "COBRANCA FINALIZADA", true, false, "#FF0000", 21, 1, 6);
 insert into status (id, description, finale, date, color, priority, profile_id, type_status_id)
-    values (900, "DEVEDOR SEM DEBITOS VENCIDOS", true, false, "#FF0000", 21, 1, 6);
+    values (900, "SEM DEBITOS", true, false, "#FF0000", 21, 1, 6);
 
 
 /*ESQUEMA DE STATUS*/

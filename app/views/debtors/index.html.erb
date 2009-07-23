@@ -1,13 +1,21 @@
-
-<h2>Lista Debtors</h2>
-
 <div class="table">
-    <table class="mytable">
-<% @debtors.each do |item| %>
+  <table class="mytable" align="center">
       <tr>
-        <th class="specalt"><%=link_to item.name, debtor_path(item)%></th>
-        <td class="alt"><%=item.cpf_cnpj%></td>
+        <th class="spec" colspan="2">Listagem de Devedores em Cobrança - Fila Operador (<%=session[:login]%>)</th>
       </tr>
-<% end %>
-    </table>
+           
+      <tr>
+        <th class="spec">Devedor</th>
+        <th class="spec">CPF / CNPJ</th>
+        <th class="spec">Status</th>
+      </tr>
+
+    <% @debtors.each do |item| %>
+      <tr>
+        <th class="spec"><%=link_to item.name, debtor_path(item)%></th>
+        <td class="alt"><%=item.cpf_cnpj%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+      </tr>
+    <% end %>
+  </table>
 </div>
