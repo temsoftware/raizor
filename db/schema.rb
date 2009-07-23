@@ -82,22 +82,22 @@ ActiveRecord::Schema.define(:version => 15) do
   add_index "debtors", ["user_id"], :name => "fk_debtors_users"
 
   create_table "debts", :force => true do |t|
-    t.string   "account",       :null => false
-    t.string   "contract",      :null => false
-    t.datetime "date",          :null => false
-    t.float    "amount",        :null => false
-    t.datetime "date_att",      :null => false
-    t.string   "amount_att",    :null => false
-    t.float    "amount_import", :null => false
+    t.string   "account",                        :null => false
+    t.string   "contract",                       :null => false
+    t.datetime "date",                           :null => false
+    t.float    "amount",                         :null => false
+    t.datetime "date_att",                       :null => false
+    t.string   "amount_att",                     :null => false
+    t.float    "amount_import",                  :null => false
     t.datetime "date_exit"
     t.string   "reason"
-    t.integer  "secure",        :null => false
-    t.integer  "secure_status", :null => false
+    t.integer  "secure",                         :null => false
+    t.integer  "secure_status",                  :null => false
     t.integer  "debtor_id"
-    t.integer  "user_id"
     t.integer  "branch_id"
     t.integer  "modality_id"
-    t.integer  "status_id"
+    t.integer  "user_id",       :default => 1
+    t.integer  "status_id",     :default => 200
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -163,8 +163,8 @@ ActiveRecord::Schema.define(:version => 15) do
   add_index "status", ["type_status_id"], :name => "fk_status_type_status"
 
   create_table "type_deals", :force => true do |t|
-    t.string "decription",                        :null => false
-    t.string "color",      :default => "#000000", :null => false
+    t.string "description",                        :null => false
+    t.string "color",       :default => "#000000", :null => false
   end
 
   create_table "type_status", :force => true do |t|

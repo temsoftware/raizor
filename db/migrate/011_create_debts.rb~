@@ -4,10 +4,10 @@ class CreateDebts < ActiveRecord::Migration
       t.column :account,       :string,   :null => false
       t.column :contract,      :string,   :null => false
       t.column :date,          :datetime, :null => false
-      t.column :amount,        :float,    :null => false
+      t.column :amount,        :money,    :null => false
       t.column :date_att,      :datetime, :null => false
       t.column :amount_att,    :string,   :null => false
-      t.column :amount_import, :float,    :null => false
+      t.column :amount_import, :money,    :null => false
       t.column :date_exit,     :datetime
       t.column :reason,        :string
       t.column :secure,        :integer,  :null => false

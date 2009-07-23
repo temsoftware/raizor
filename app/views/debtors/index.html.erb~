@@ -1,10 +1,12 @@
 <h2>Lista Debtors</h2>
 
+<div class="table">
+    <table class="mytable">
 <% @debtors.each do |item| %>
-  <div>	
-    <font color=<%=item.status.color%>>
-      <p><%=link_to item.name, debtor_path(item)%> - <%=item.cpf_cnpj%></p>
-    </font>
-  </div>
+      <tr>
+        <th class="specalt"><%link_to debtors.path(item),item.name%></th>
+        <td class="alt"><%=item.cpf_cnpj%></td>
+      </tr>
 <% end %>
-
+    </table>
+</div>

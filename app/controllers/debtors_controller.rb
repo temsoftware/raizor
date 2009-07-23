@@ -6,4 +6,9 @@ class DebtorsController < ApplicationController
   def show
     @debtor = Debtor.find params[:id]
   end
+
+  def mostra
+    @mostrar = params[:lista]
+    render :partial => "lista"
+  end
 end

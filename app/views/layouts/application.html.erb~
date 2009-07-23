@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>Raizor sistem</title>
+    <%=stylesheet_link_tag :default%>
+    <%=javascript_include_tag :defaults%>
+  </head>
+  <body>
+    <%=yield%>
+  </body>
+</html>

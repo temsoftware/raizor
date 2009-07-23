@@ -1,7 +1,61 @@
-<div>	
-    <h3><%=@debtor.name%></h3>
-    <h5>CPF / CNPJ: <%=@debtor.cpf_cnpj%></h5>
-    <p>Status: <%=@debtor.status_id%></p>
-    <p>Pai: <%=@debtor.father%></p>
-    <p>Mae: <%=@debtor.mother%></p>
+<div class="table">
+    <table class="mytable">
+      <tr>
+        <th class="specalt" colspan="3"><%=@debtor.id%> - <%=@debtor.name%></th>
+      </tr>
+
+      <tr> 
+        <th class="spec">Cpf / Cnpj</th>
+        <th class="spec">Tipo Pessoa</th>
+        <th class="spec">Endereço</th>
+        <th class="spec">Cidade</th>
+        <th class="spec">Estado</th>
+        <th class="spec">Pai</th>
+        <th class="spec">Mae</th>
+      </tr>
+
+      <tr>
+        <td class="alt"><%=@debtor.cpf_cnpj%></td>
+        <td class="alt"><%=@debtor.debtor_type%></td>
+        <td class="alt"><%=@debtor.address%></td>
+        <td class="alt"><%=@debtor.city%></td>
+        <td class="alt"><%=@debtor.state%></td>
+        <td class="alt"><%=@debtor.father%></td>
+        <td class="alt"><%=@debtor.mother%></td>
+      </tr>
+    </table>
+</div>
+
+<div class="table">
+  <table class="mytable">
+    <tr>
+      <th class="specalt" colspan="2">Dividas</th>
+    </tr>
+
+    <tr> 
+      <th class="spec">Vencimento</th>
+      <th class="spec">Vlr.Original</th>
+      <th class="spec">Vlr.Corrigido</th>
+      <th class="spec">Contrato</th>
+      <th class="spec">Modalidade</th>
+      <th class="spec">Agencia</th>
+      <th class="spec">Comissao</th>
+      <th class="spec">Status</th>
+      <th class="spec">Tipo Status</th>
+    </tr>
+
+    <% @debtor.debt.each do |item| %>
+      <tr>
+        <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
+        <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
+        <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
+        <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.status.description%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+      </tr>
+    <% end %>
+  </table>
 </div>

@@ -4,6 +4,11 @@ class DebtorsController < ApplicationController
   end
 
   def show
-    @debtors = Debtor.find params[:id]
+    @debtor = Debtor.find params[:id]
+  end
+
+  def mostra
+    @mostrar = params[:debt]
+    render :partial => "lista"
   end
 end
