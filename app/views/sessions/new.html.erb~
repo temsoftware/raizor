@@ -7,5 +7,5 @@
   <%=text_field "login", "username", :maxlenght => "10", :size => "9"%>
   <label>password:</label>
   <%=password_field "login", "password", :maxlenght => "8", :size => "7"%>
-  <button type="submit">Sigin</button>
+  <button type="submit">Sign in</button>
 

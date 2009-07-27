@@ -40798,3 +40798,1239 @@ Rendering debtors/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
 Completed in 75ms (View: 50, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:45:54) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 69ms (View: 44, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-23 18:45:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDebtor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.1ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 2) [0m
+  [4;36;1mDebt Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 109ms (View: 86, DB: 8) | 200 OK [http://localhost/debtors/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-23 18:46:07) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 56ms (View: 33, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-23 18:46:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.1ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 198ms (View: 175, DB: 9) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-23 18:46:17) [DELETE]
+  Parameters: {"authenticity_token"=>"TQcj+tMOIJMY1WJi74HRX8SuQ2bCi7mD6LD4jhO8QQc=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-23 18:46:17) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:03:57) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 88ms (View: 82, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 11:04:09) [POST]
+  Parameters: {"authenticity_token"=>"Gxn0MkPH4dZmdXghV4jTYo6URS49FZpm5OeByMhLVXA=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 39ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:04:09) [GET]
+  [4;36;1mDebtor Load (0.7ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.3ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 260ms (View: 192, DB: 6) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:04:51) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 85ms (View: 60, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:04:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.5ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.7ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.9ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.3ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.2ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 539ms (View: 499, DB: 14) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:05:33) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 74ms (View: 49, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:05:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.4ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.5ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 2) [0m
+  [4;36;1mDebt Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 199ms (View: 167, DB: 10) | 200 OK [http://localhost/debtors/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:05:42) [GET]
+  [4;36;1mDebtor Load (0.6ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 93ms (View: 62, DB: 8) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 11:06:44) [DELETE]
+  Parameters: {"authenticity_token"=>"Gxn0MkPH4dZmdXghV4jTYo6URS49FZpm5OeByMhLVXA=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 48ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:06:45) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 11:06:50) [POST]
+  Parameters: {"authenticity_token"=>"WPeieT7+ezpZ14yI9LlOaew9cehaQnrJSlRhJqbwTUE=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 27ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:06:50) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 77ms (View: 53, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:06:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 314ms (View: 157, DB: 12) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:07:14) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 74ms (View: 49, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 11:07:17) [DELETE]
+  Parameters: {"authenticity_token"=>"WPeieT7+ezpZ14yI9LlOaew9cehaQnrJSlRhJqbwTUE=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:07:17) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:10:58) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 11:11:03) [POST]
+  Parameters: {"authenticity_token"=>"WqIKDlq9DKnYfHO4hYSFHaXuQ6S7AuGB6sukoT7XT7U=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:11:03) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 71ms (View: 46, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:11:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.1ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 135ms (View: 104, DB: 9) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (2.7ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 166ms (View: 131, DB: 13) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:11:51) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 77ms (View: 52, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:11:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 229ms (View: 198, DB: 10) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 11:13:12) [DELETE]
+  Parameters: {"authenticity_token"=>"WqIKDlq9DKnYfHO4hYSFHaXuQ6S7AuGB6sukoT7XT7U=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:13:12) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 11:38:36) [POST]
+  Parameters: {"authenticity_token"=>"bGoQDSR3AyM8IEnJqiUFFR0OyX3um4IBWIMd2i7uigA=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 11:38:36) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 92ms (View: 67, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 11:38:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 266ms (View: 231, DB: 11) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 11:38:46) [DELETE]
+  Parameters: {"authenticity_token"=>"bGoQDSR3AyM8IEnJqiUFFR0OyX3um4IBWIMd2i7uigA=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 11:38:46) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 13:27:27) [POST]
+  Parameters: {"authenticity_token"=>"abwhddxCJ8ZcHOCuwsdht89lTwZwR5ybJdhBhqvXHBo=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 13:27:28) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 60ms (View: 36, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 13:31:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.1ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (4.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 160ms (View: 131, DB: 15) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 13:43:46) [DELETE]
+  Parameters: {"authenticity_token"=>"abwhddxCJ8ZcHOCuwsdht89lTwZwR5ybJdhBhqvXHBo=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 13:43:46) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 13:50:04) [POST]
+  Parameters: {"authenticity_token"=>"mHqUmaKbU0UYhzHD3lYj2Wx/E8RGYJBW4vb3wVDS/IY=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 24ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 13:50:04) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 134ms (View: 110, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 13:56:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 130ms (View: 98, DB: 9) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-24 13:58:32) [DELETE]
+  Parameters: {"authenticity_token"=>"mHqUmaKbU0UYhzHD3lYj2Wx/E8RGYJBW4vb3wVDS/IY=", "id"=>"2"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-24 13:58:32) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-24 14:00:23) [POST]
+  Parameters: {"authenticity_token"=>"uEWb1zTYOTD4bAyUOun7xdVnHP7JekYQH5aGqXrNIYY=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (18.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 40ms (DB: 19) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 14:00:23) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 122ms (View: 107, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 14:00:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 133ms (View: 100, DB: 10) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-24 14:02:58) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 48ms (View: 32, DB: 4) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-24 14:03:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.1ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 186ms (View: 93, DB: 9) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-27 12:27:24) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 64ms (View: 59, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-27 12:27:53) [POST]
+  Parameters: {"authenticity_token"=>"jUuuMryzwwOQ6Rq3SARvC0No0oyINOn0CXS85IQlIlE=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/debtors
+Completed in 45ms (DB: 2) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-27 12:27:53) [GET]
+  [4;36;1mDebtor Load (0.9ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.2ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 252ms (View: 167, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-27 12:27:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.5ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.5ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.6ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.3ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.4ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.3ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 321ms (View: 286, DB: 13) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 127.0.0.1 at 2009-07-27 12:28:15) [GET]
+  [4;36;1mDebtor Load (0.3ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 141ms (View: 116, DB: 5) | 200 OK [http://localhost/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 192.168.0.201 at 2009-07-27 12:28:32) [GET]
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://192.168.0.254/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 192.168.0.201 at 2009-07-27 12:28:43) [POST]
+  Parameters: {"authenticity_token"=>"oh6Q7yb41V3oanGeJ9zq39UolcCawv4YLd0V67rk1eA=", "login"=>{"username"=>"marco", "password"=>"123"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'Marco' and password = '123') LIMIT 1[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://192.168.0.254:3000/debtors
+Completed in 25ms (DB: 2) | 302 Found [http://192.168.0.254/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 192.168.0.201 at 2009-07-27 12:28:44) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 83ms (View: 53, DB: 5) | 200 OK [http://192.168.0.254/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 192.168.0.201 at 2009-07-27 12:28:47) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 144ms (View: 119, DB: 5) | 200 OK [http://192.168.0.254/debtors]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 192.168.0.201 at 2009-07-27 12:28:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 186ms (View: 148, DB: 15) | 200 OK [http://192.168.0.254/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 127.0.0.1 at 2009-07-27 12:38:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (7.6ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 248ms (View: 207, DB: 19) | 200 OK [http://localhost/debtors/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 192.168.0.201 at 2009-07-27 12:51:05) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 50ms (View: 33, DB: 4) | 200 OK [http://192.168.0.254/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 192.168.0.201 at 2009-07-27 12:51:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (2.4ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.8ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 2) [0m
+  [4;36;1mDebt Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mBranch Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 183ms (View: 136, DB: 15) | 200 OK [http://192.168.0.254/debtors/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 192.168.0.201 at 2009-07-27 12:51:12) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 178ms (View: 154, DB: 5) | 200 OK [http://192.168.0.254/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 192.168.0.201 at 2009-07-27 12:51:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 2) [0m
+  [4;36;1mDebt Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mBranch Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mTypeStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 178ms (View: 141, DB: 12) | 200 OK [http://192.168.0.254/debtors/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#index (for 192.168.0.201 at 2009-07-27 12:51:30) [GET]
+  [4;36;1mDebtor Load (0.2ms)[0m   [0;1mSELECT * FROM `debtors` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/index
+  [4;35;1mDebtor Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `debtors`[0m
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `status`[0m
+  [4;35;1mStatus Load (0.1ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mTypeStatus Columns (7.4ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.2ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 86ms (View: 54, DB: 12) | 200 OK [http://192.168.0.254/debtors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 192.168.0.201 at 2009-07-27 12:51:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDebtor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.2ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 1) [0m
+  [4;36;1mDebt Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 722) [0m
+  [4;36;1mBranch Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (9.6ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (9.7ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mTypeStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 208) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 12) [0m
+Completed in 298ms (View: 244, DB: 32) | 200 OK [http://192.168.0.254/debtors/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DebtorsController#show (for 192.168.0.201 at 2009-07-27 12:51:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDebtor Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `debtors`[0m
+  [4;35;1mDebtor Load (0.2ms)[0m   [0mSELECT * FROM `debtors` WHERE (`debtors`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering debtors/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `status` WHERE (profile_id >= 2) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `status`[0m
+  [4;36;1mStatus Load (0.1ms)[0m   [0;1mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;35;1mDebt Load (0.1ms)[0m   [0mSELECT * FROM `debts` WHERE (`debts`.debtor_id = 2) [0m
+  [4;36;1mDebt Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `debts`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `status` WHERE (`status`.`id` = 200) [0m
+  [4;36;1mModality Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `modalities`[0m
+  [4;35;1mModality Load (0.1ms)[0m   [0mSELECT * FROM `modalities` WHERE (`modalities`.`id` = 752) [0m
+  [4;36;1mBranch Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `branches`[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM `branches` WHERE (`branches`.`id` = 1013) [0m
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mTypeStatus Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_status`[0m
+  [4;35;1mTypeStatus Load (0.1ms)[0m   [0mSELECT * FROM `type_status` WHERE (`type_status`.`id` = 8) [0m
+Completed in 151ms (View: 112, DB: 9) | 200 OK [http://192.168.0.254/debtors/2]
