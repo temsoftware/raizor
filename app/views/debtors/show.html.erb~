@@ -8,7 +8,9 @@
         <tr>
           <th class="spec"><%=status.select :status_id, Status.find(:all, :conditions =>  ["profile_id >= ?", session[:id]]).collect { |f| [ f.description, f.id ] }, {}, { :class => "input" } %></th>
        </tr>
-
+      <tr>
+        <th class="spec"><%=calendar_date_select_tag "data" %>  </th>
+      </tr>
        <tr>
          <th class="spec"><button type="submit" class = "input">ok</button></td>
        </tr>
@@ -65,14 +67,14 @@
 
       <% @debtor.debt.each do |item| %>
         <tr>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.amount%></td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.contract%></td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.user.name%></td>
-          <td class="altnocolor" bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
+          <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
+          <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
+          <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
         </tr>
       <% end %>
     </table>

@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
                                       params[:login][:username].capitalize!, params[:login][:password]])
     if @user
       if @user.active?
+        flash[:notice] = nil
         session[:logged] = true
         session[:id] = @user.id
         session[:login] = @user.login

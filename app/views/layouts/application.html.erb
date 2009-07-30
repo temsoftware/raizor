@@ -3,6 +3,7 @@
     <title>Raizor sistem</title>
     <%=stylesheet_link_tag "default"%>
     <%=javascript_include_tag :defaults%>
+    <%=calendar_date_select_includes "silver", :locale => "pt"%>  
   </head>
   <body>
   <h1>EMPLACA ASSESSORIA</h1>
@@ -13,6 +14,13 @@
       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
     </ul>
   </div>
+  
+  <%if (flash[:notice])%>
+    <div id="flash">
+      <label><%=flash[:notice]%></label>
+    </div>
+  <% end %>
+
   <%=yield%>
 </div>
     

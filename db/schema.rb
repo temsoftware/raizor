@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 15) do
+ActiveRecord::Schema.define(:version => 17) do
 
   create_table "before_deals", :force => true do |t|
     t.datetime "date",         :null => false
@@ -58,10 +58,32 @@ ActiveRecord::Schema.define(:version => 15) do
   add_index "deals", ["debtor_id"], :name => "fk_deals_debtors"
   add_index "deals", ["type_deal_id"], :name => "fk_deals_type_deals"
 
+  create_table "debt_logs", :force => true do |t|
+    t.integer  "status_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "debt_logs", ["status_id"], :name => "fk_debt_logs_status"
+
+  create_table "debtor_logs", :force => true do |t|
+    t.string   "description", :null => false
+    t.integer  "debtor_id"
+    t.integer  "status_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "debtor_logs", ["debtor_id"], :name => "fk_debtor_logs_debtors"
+  add_index "debtor_logs", ["status_id"], :name => "fk_debtor_logs_status"
+  add_index "debtor_logs", ["user_id"], :name => "fk_debt_logs_users"
+
   create_table "debtors", :force => true do |t|
     t.string   "name",                                   :null => false
     t.string   "controller",                             :null => false
-    t.boolean  "postal",                                 :null => false
+    t.boolean  "postal",      :default => false
     t.string   "debtor_type",                            :null => false
     t.string   "cpf_cnpj",                               :null => false
     t.string   "address",     :default => "--- :null\n"

@@ -8,8 +8,7 @@ class Debtor < ActiveRecord::Base
   # Dados da Tabela
   validates_presence_of :name
   validates_presence_of :controller
-  validates_presence_of :postal
-  validates_presence_of :type
+  validates_presence_of :debtor_type
   validates_presence_of :cpf_cnpj
 
   validates_uniqueness_of :controller  

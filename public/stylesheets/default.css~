@@ -1,4 +1,4 @@
-body {    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;    color: #4f6b72;    background-color: #F5F5F5;}a {    color: #c75f3e;}
+body {    font: normal 11px auto Helvetica, sans-serif;    color: #4f6b72;    background-color: #F5F5F5;}a {    color: #c75f3e;}
 a:hover, a:active {
 	color: #fff;
 	background-color: #B52C07;
@@ -22,6 +22,15 @@ h3 {
 	margin-top: 0;
 }
 
+#flash {
+    margin-bottom: 3px;
+    height: 25px;
+	background-color: #90EE90;
+	color:  #000000;
+    text-align: center;
+    font: normal 14px auto Helvetica, sans-serif;
+}
+
 #container {
 	margin: 1em auto;
 	text-align: left;
@@ -32,7 +41,7 @@ h3 {
     height: 25px;
 	background-color: #D9D9D9;
     text-align: center;
-    font: normal 14px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font: normal 14px auto Helvetica, sans-serif;
 }
 
 #navegacao ul {
@@ -59,8 +68,8 @@ h3 {
 
 #menu {
 	float: left;
-	width: 165px;
-    height:100%;
+	width: 310px;
+    height:85%;
     background-color: #ffffff;
 }
 
@@ -73,27 +82,26 @@ h3 {
     text-align: center;
     color: #FFFFFF;
     background-color: #000000;
-    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font: normal 11px auto Helvetica, sans-serif;
 }
 
 .input {
     background:#FFFFFF;
     border:1px dashed #4f6b72;
-    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font: normal 9px auto  Helvetica, sans-serif;
 }
 
 div.table {
     margin-bottom: 30px;
 }
-#mytable {    width: 800px;    padding: 0;    margin: 0;}th {    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;    color: #4f6b72;    border-right: 1px solid #C1DAD7;    border-bottom: 1px solid #C1DAD7;    border-top: 1px solid #C1DAD7;    letter-spacing: 2px;    text-transform: uppercase;    text-align: center;    padding: 6px 6px 6px 5px;}
+#mytable {    width: 800px;    padding: 0;    margin: 0;}th {    font: bold 11px Helvetica, sans-serif;    color: #4f6b72;    border-right: 1px solid #C1DAD7;    border-bottom: 1px solid #C1DAD7;    border-top: 1px solid #C1DAD7;    letter-spacing: 2px;    text-transform: uppercase;    text-align: center;    padding: 6px 6px 6px 5px;}
 th.spec {
-    background: #FFFFFF;    border-left: 1px solid #C1DAD7;    border-top: 0;    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;}th.specalt {
-    background: #FFFFFF;    border-left: 1px solid #C1DAD7;    border-top: 0;    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    background: #FFFFFF;    border-left: 1px solid #C1DAD7;    border-top: 0;    font: bold 10px  Helvetica, sans-serif;}th.specalt {
+    background: #FFFFFF;    border-left: 1px solid #C1DAD7;    border-top: 0;    font: bold 10px Helvetica, sans-serif;
     text-align: left;}
 
 td {    border-right: 1px solid #C1DAD7;    border-bottom: 1px solid #C1DAD7;    padding: 6px 6px 6px 12px;    color: #000000;
-    font: 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font: 10px Helvetica, sans-serif;
     text-align: center;}
 td.alt {    background: #FFFFFF;
-    color: #797268;}td.altnocolor {
     color: #797268;}

@@ -8,7 +8,9 @@
         <tr>
           <th class="spec"><%=status.select :status_id, Status.find(:all, :conditions =>  ["profile_id >= ?", session[:id]]).collect { |f| [ f.description, f.id ] }, {}, { :class => "input" } %></th>
        </tr>
-
+      <tr>
+        <th class="spec"><%=calendar_date_select_tag "data" %>  </th>
+      </tr>
        <tr>
          <th class="spec"><button type="submit" class = "input">ok</button></td>
        </tr>

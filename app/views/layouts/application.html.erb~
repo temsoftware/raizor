@@ -3,6 +3,7 @@
     <title>Raizor sistem</title>
     <%=stylesheet_link_tag "default"%>
     <%=javascript_include_tag :defaults%>
+    <%=calendar_date_select_includes "silver", :locale => "pt"%>  
   </head>
   <body>
   <h1>EMPLACA ASSESSORIA</h1>
@@ -10,16 +11,16 @@
   <div id="navegacao">
     <ul>
       <li><%=link_to "Lista de Devedores", debtors_path%></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Menu</a></li>
       <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
     </ul>
   </div>
+  
+  <%if (flash[:notice])%>
+    <div id="flash">
+      <%=flash[:notice]%>
+    </div>
+  <% end %>
+
   <%=yield%>
 </div>
     

@@ -3,7 +3,7 @@ class CreateDebtors < ActiveRecord::Migration
     create_table :debtors do |t|
       t.column :name,        :string,  :null => false
       t.column :controller,  :string,  :null => false
-      t.column :postal,      :boolean, :null => false
+      t.column :postal,      :boolean, :default => false
       t.column :debtor_type, :string,  :null => false
       t.column :cpf_cnpj,    :string,  :null => false
       t.column :address,     :string,  :default => :null
