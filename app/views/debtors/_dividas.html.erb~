@@ -1,0 +1,31 @@
+<div class="table">
+  <table class="mytable">
+    <tr>
+      <th class="specalt" colspan="2">Dividas</th>
+    </tr>
+
+    <tr> 
+      <th class="spec">Vencimento</th>
+      <th class="spec">Vlr.Original</th>
+      <th class="spec">Vlr.Corrigido</th>
+      <th class="spec">Contrato</th>
+      <th class="spec">Modalidade</th>
+      <th class="spec">Agência</th>
+      <th class="spec">Comissão</th>
+      <th class="spec">Tipo Status</th>
+    </tr>
+
+      <% @debtor.debt.each do |item| %>
+        <tr>
+          <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
+          <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
+          <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
+          <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
+          <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>

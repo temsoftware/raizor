@@ -1,0 +1,3 @@
+class DebtorLog < ActiveRecord::Base
+  belongs_to :debtor
+end

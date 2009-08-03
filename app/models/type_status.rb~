@@ -1,2 +1,4 @@
 class TypeStatus < ActiveRecord::Base
+  has_many :status #Status
+  has_many :debt , :through => :status
 end

@@ -22,6 +22,15 @@ h3 {
 	margin-top: 0;
 }
 
+.observacao {
+    height:60px; 
+    width:240px;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow:-moz-scrollbars-vertical;
+}
+
 #flash {
     margin-bottom: 3px;
     height: 25px;
@@ -73,15 +82,14 @@ h3 {
 
 #menu {
 	float: left;
-	width: 310px;
+	width: 300px;
     height:85%;
     background-color: #ffffff;
 }
 
 #footer {
     clear: both;
-    position: absolute;
-    height: 13px;
+    height: 14px;
     width: 99%;
     bottom: 0;
     text-align: center;

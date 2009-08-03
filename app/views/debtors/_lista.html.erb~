@@ -1,1 +1,1 @@
-<=%@mostrar.join(",")%>
+<%=@mostrar.join(",")%>

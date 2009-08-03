@@ -1,6 +1,6 @@
 class Status < ActiveRecord::Base
   has_many   :debtor        #Devedor
-  has_many   :debt          #Divida
+  has_many   :debt          #Divida 
   has_one    :recovery      #Fila de Cobrança
   has_one    :schema_status #Fila de Cobrança
   #belongs_to :queue        #Fila

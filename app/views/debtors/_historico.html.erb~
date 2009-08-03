@@ -1,0 +1,28 @@
+<div class="table">
+  <table class="mytable">
+    <tr>
+     <th class="specalt" colspan="2">Historico</th>
+    </tr>
+
+    <tr> 
+     <th class="spec">Data</th>
+     <th class="spec">Hora</th>
+     <th class="spec">Status</th>
+     <th class="spec">Descrição</th>
+     <th class="spec">Operador</th>
+     <th class="spec">Observação</th>
+    </tr>
+
+    <% @debtor.log_debtor.each.reverse do |item| %>
+      <tr>
+        <td class="alt"><%=item.created_at.strftime("%d/%m/%Y") %></td>
+        <td class="alt"><%=item.created_at.strftime("%H:%M") %></td>
+        <td class="alt"><%=item.status_id%></td>
+        <td class="alt"><%=item.status.description%></td>
+        <td class="alt"><%=item.user.name%></td>
+        <td class="alt"><%=item.description.upcase%></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+

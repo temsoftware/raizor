@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 17) do
+ActiveRecord::Schema.define(:version => 16) do
 
   create_table "before_deals", :force => true do |t|
     t.datetime "date",         :null => false
@@ -57,28 +57,6 @@ ActiveRecord::Schema.define(:version => 17) do
   add_index "deals", ["debt_id"], :name => "fk_deals_debts"
   add_index "deals", ["debtor_id"], :name => "fk_deals_debtors"
   add_index "deals", ["type_deal_id"], :name => "fk_deals_type_deals"
-
-  create_table "debt_logs", :force => true do |t|
-    t.integer  "status_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "debt_logs", ["status_id"], :name => "fk_debt_logs_status"
-
-  create_table "debtor_logs", :force => true do |t|
-    t.string   "description", :null => false
-    t.integer  "debtor_id"
-    t.integer  "status_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "debtor_logs", ["debtor_id"], :name => "fk_debtor_logs_debtors"
-  add_index "debtor_logs", ["status_id"], :name => "fk_debtor_logs_status"
-  add_index "debtor_logs", ["user_id"], :name => "fk_debt_logs_users"
 
   create_table "debtors", :force => true do |t|
     t.string   "name",                                   :null => false
@@ -129,6 +107,19 @@ ActiveRecord::Schema.define(:version => 17) do
   add_index "debts", ["modality_id"], :name => "fk_debts_modalities"
   add_index "debts", ["status_id"], :name => "fk_debts_status"
   add_index "debts", ["user_id"], :name => "fk_debts_users"
+
+  create_table "log_debtors", :force => true do |t|
+    t.string   "description", :null => false
+    t.integer  "debtor_id"
+    t.integer  "status_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "log_debtors", ["debtor_id"], :name => "fk_log_debtors_debtors"
+  add_index "log_debtors", ["status_id"], :name => "fk_log_debtors_status"
+  add_index "log_debtors", ["user_id"], :name => "fk_log_debtors_users"
 
   create_table "modalities", :force => true do |t|
     t.string   "description", :null => false

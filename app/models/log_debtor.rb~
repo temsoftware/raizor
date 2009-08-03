@@ -1,0 +1,5 @@
+class LogDebtor < ActiveRecord::Base
+    belongs_to :debtor
+    belongs_to :status
+    belongs_to :user
+end

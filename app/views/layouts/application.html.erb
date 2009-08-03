@@ -7,25 +7,24 @@
   </head>
   <body>
   <h1>EMPLACA ASSESSORIA</h1>
-<div id="container">
-  <div id="navegacao">
-    <ul>
-      <li><%=link_to "Lista de Devedores", debtors_path%></li>
-      <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
-    </ul>
-  </div>
+    <div id="container">
+      <div id="navegacao">
+          <ul>
+            <li><%=link_to "Lista de Devedores", debtors_path%></li>
+            <li><%=link_to "Logoff", session_path(session[:id]), :method => :delete%></li>
+          </ul>
+       </div>
   
-  <%if (flash[:notice])%>
-    <div id="flash">
-      <label><%=flash[:notice]%></label>
+        <%if (flash[:notice])%>
+          <div id="flash">
+            <label><%=flash[:notice]%></label>
+          </div>
+        <% end %>
+      <%=yield%>
     </div>
-  <% end %>
-
-  <%=yield%>
-</div>
     
-	<div id="footer">
-		Copyright &copy; Raizor 2009 - Desenvolvido por TEM Software
-	</div>
+	 <div id="footer">
+		 Copyright &copy; Raizor 2009 - Desenvolvido por TEM Software
+	 </div>
   </body>
 </html>
