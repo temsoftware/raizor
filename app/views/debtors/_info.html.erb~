@@ -1,0 +1,28 @@
+<div class="table">
+  <table class="mytable">
+    <tr>
+      <th class="specalt" colspan="3"><%=@debtor.id%> - <%=@debtor.name%> (<%=@debtor.debtor_type%>)</th>
+    </tr>
+
+    <tr> 
+     <th class="spec">Cpf / Cnpj</th>
+     <th class="spec">Endereço</th>
+     <th class="spec">Cidade</th>
+     <th class="spec">Estado</th>
+     <th class="spec">Pai</th>
+     <th class="spec">Mãe</th>
+     <th class="spec">Status</th>
+    </tr>
+
+    <tr>
+     <td class="alt"><%=@debtor.cpf_cnpj%></td>
+     <td class="alt"><%=@debtor.address%></td>
+     <td class="alt"><%=@debtor.city%></td>
+     <td class="alt"><%=@debtor.state%></td>
+     <td class="alt"><%=@debtor.father%></td>
+     <td class="alt"><%=@debtor.mother%></td>
+     <td bgcolor=<%=@debtor.status.color%>><%=@debtor.status.description%></td>
+    </tr>
+  </table>
+</div>
+

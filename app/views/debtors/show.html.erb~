@@ -1,42 +1,10 @@
-	<div id="menu">
-    <table class="mytable">
-      <tr>
-        <th class="spec">Selecione um status</th>
-      </tr>
+<div id="menu">
+  <%=render :partial => "menu"%>
+</div>
 
-      <%form_for @debtor do |status|%>
-        <tr>
-          <th class="spec">
-            <%=status.select :status_id, 
-                             Status.find(:all, 
-                                         :conditions =>  ["profile_id >= ?", session[:id]]).collect { |f| [ f.description, f.id ] }, {}, { :class => "input" } %></th>
-       </tr>
-      <tr>
-        <th class="spec">Selecione uma data</th>
-      </tr>
-      <tr>
-        <th class="spec"><%=calendar_date_select_tag "data" %>  </th>
-      </tr>
-       
-      <tr>
-        <th class="spec">Digite uma observação</th>
-      </tr>
-
-       <tr>
-         <th class="spec"><textarea name ="obs" class ="observacao"></textarea></td>
-       </tr>
-       
-       <tr>
-         <th class="spec"><button type="submit" class = "input">ok</button></td>
-       </tr>
-      <% end %>
-    </table>
-  </div>
-	
-
-  <div id="contents">
-    <%=render :partial => "info"%>
-    <%=render :partial => "dividas"%>
-    <%=render :partial => "historico"%>
-  </div>
+<div id="contents">
+  <%=render :partial => "info",      :locals => {:debtor => @debtor}%>
+  <%=render :partial => "dividas",   :locals => {:debtor => @debtor}%>
+  <%=render :partial => "historico", :locals => {:debtor => @debtor}%>
+</div>
 

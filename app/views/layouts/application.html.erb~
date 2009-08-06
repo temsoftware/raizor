@@ -6,7 +6,7 @@
     <%=calendar_date_select_includes "silver", :locale => "pt"%>  
   </head>
   <body>
-  <h1>TELL FREE</h1>
+  <h1>EMPLACA ASSESSORIA</h1>
     <div id="container">
       <div id="navegacao">
           <ul>

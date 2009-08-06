@@ -3,6 +3,7 @@ class Debtor < ActiveRecord::Base
   has_many   :phone       #Telefone
   has_many   :before_deal #Situação do Acordo
   has_many   :log_debtor  #Histórico
+  has_many   :post        #Post
   belongs_to :user        #Usuário
   belongs_to :status      #Status
 

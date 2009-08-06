@@ -15,7 +15,7 @@
       <th class="spec">Tipo Status</th>
     </tr>
 
-    <% @debtor.debt.each do |item| %>
+    <% debtor.debt.each do |item| %>
       <tr>
         <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
         <td bgcolor=<%=item.status.color%>><%=item.amount%></td>

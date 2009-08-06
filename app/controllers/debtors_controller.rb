@@ -18,11 +18,11 @@ class DebtorsController < ApplicationController
       d.save
     end
 
-  @log = LogDebtor.new
-  @log.debtor_id = @debtor.id
-  @log.status_id = @debtor.status_id
-  @log.user_id = session[:id]
-  @log.description = params[:obs]
+    @log = LogDebtor.new
+    @log.debtor_id = @debtor.id
+    @log.status_id = @debtor.status_id
+    @log.user_id = session[:id]
+    @log.description = params[:obs]
 
     if @debtor.save && @log.save
       flash[:notice] = "Status alterado com sucesso!"    
@@ -30,6 +30,7 @@ class DebtorsController < ApplicationController
       flash[:notice] = "Oops! Temos um probleminha.."
     end
 
-    redirect_to debtor_path(@debtor)
+    #redirect_to debtor_path(@debtor)
+    render :action => "show"
   end
 end

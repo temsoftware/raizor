@@ -13,7 +13,7 @@
      <th class="spec">Observação</th>
     </tr>
 
-    <% (@debtor.log_debtor.reverse).each do |item| %>
+    <% (debtor.log_debtor.reverse).each do |item| %>
       <tr>
         <td class="alt"><%=item.created_at.strftime("%d/%m/%Y") %></td>
         <td class="alt"><%=item.created_at.strftime("%H:%M") %></td>

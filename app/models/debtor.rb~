@@ -3,6 +3,7 @@ class Debtor < ActiveRecord::Base
   has_many   :phone       #Telefone
   has_many   :before_deal #Situação do Acordo
   has_many   :log_debtor  #Histórico
+  has_many   :post  #Histórico
   belongs_to :user        #Usuário
   belongs_to :status      #Status
 
@@ -16,7 +17,7 @@ class Debtor < ActiveRecord::Base
   validates_uniqueness_of :cpf_cnpj
 
 #TESTE
-  named_scope :fila, lambda { |id| { :conditions => ["user_id = ?", id], :order => :modality_id}}
+  named_scope :fila, lambda { |id| { :conditions => ["user_id = ?", id], :order => :status_id}}
 
 #  named_scope :fila, lambda { |id| { :conditions => ["user_id = ? and (updated_at is null or updated_at <> ?)", id, 0.days.ago.strftime("%Y-%m-%d")]}}
 end

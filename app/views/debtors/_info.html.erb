@@ -1,7 +1,7 @@
 <div class="table">
   <table class="mytable">
     <tr>
-      <th class="specalt" colspan="3"><%=@debtor.id%> - <%=@debtor.name%> (<%=@debtor.debtor_type%>)</th>
+      <th class="specalt" colspan="3"><%=debtor.id%> - <%=debtor.name%> (<%=debtor.debtor_type%>)</th>
     </tr>
 
     <tr> 
@@ -15,13 +15,13 @@
     </tr>
 
     <tr>
-     <td class="alt"><%=@debtor.cpf_cnpj%></td>
-     <td class="alt"><%=@debtor.address%></td>
-     <td class="alt"><%=@debtor.city%></td>
-     <td class="alt"><%=@debtor.state%></td>
-     <td class="alt"><%=@debtor.father%></td>
-     <td class="alt"><%=@debtor.mother%></td>
-     <td bgcolor=<%=@debtor.status.color%>><%=@debtor.status.description%></td>
+     <td class="alt"><%=debtor.cpf_cnpj%></td>
+     <td class="alt"><%=debtor.address%></td>
+     <td class="alt"><%=debtor.city%></td>
+     <td class="alt"><%=debtor.state%></td>
+     <td class="alt"><%=debtor.father%></td>
+     <td class="alt"><%=debtor.mother%></td>
+     <td bgcolor=<%=@debtor.status.color%>><%=debtor.status.description%></td>
     </tr>
   </table>
 </div>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 16) do
+ActiveRecord::Schema.define(:version => 20090806184812) do
 
   create_table "before_deals", :force => true do |t|
     t.datetime "date",         :null => false
@@ -138,6 +138,17 @@ ActiveRecord::Schema.define(:version => 16) do
   end
 
   add_index "phones", ["debtor_id"], :name => "fk_phones_users"
+
+  create_table "posts", :force => true do |t|
+    t.string   "mensage"
+    t.integer  "user_id"
+    t.integer  "debtor_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "posts", ["debtor_id"], :name => "fk_posts_debtors"
+  add_index "posts", ["user_id"], :name => "fk_posts_users"
 
   create_table "profiles", :force => true do |t|
     t.string   "description", :null => false

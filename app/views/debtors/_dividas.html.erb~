@@ -15,17 +15,17 @@
       <th class="spec">Tipo Status</th>
     </tr>
 
-      <% @debtor.debt.each do |item| %>
-        <tr>
-          <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
-          <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
-          <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
-          <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
-          <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
-          <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
-          <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
-          <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
-        </tr>
-      <% end %>
-    </table>
-  </div>
+    <% @debtor.debt.each do |item| %>
+      <tr>
+        <td bgcolor=<%=item.status.color%>><%=item.date.strftime("%d/%m/%Y") %></td>
+        <td bgcolor=<%=item.status.color%>><%=item.amount%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.amount_att%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.contract%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.modality_id%> (<%=item.modality.description%>)</td>
+        <td bgcolor=<%=item.status.color%>><%=item.branch_id%> (<%=item.branch.name%>)</td>
+        <td bgcolor=<%=item.status.color%>><%=item.user.name%></td>
+        <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+      </tr>
+   <% end %>
+  </table>
+</div>

@@ -1,9 +1,10 @@
-<table class="mytable">
-  <tr>
-    <th class="spec">Selecione um status</th>
-  </tr>
+<div class="table">
+  <table class="mytable">
+    <tr>
+      <th class="spec">Selecione um status</th>
+    </tr>
 
-  <%form_for @debtor do |status|%>
+  <%form_for debtor do |status|%>
     <tr>
       <th class="spec">
         <%=status.select :status_id, 
@@ -26,11 +27,37 @@
     </tr>
 
     <tr>
-      <th class="spec"><textarea name ="obs" class ="observacao"></textarea></td>
+      <th class="spec"><textarea name="obs" class="observacao"></textarea></td>
     </tr>
        
     <tr>
-      <th class="spec"><button type="submit" class = "input">ok</button></td>
+      <th class="spec"><button type="submit" class="botao">Atualizar cobrança &raquo;</button></th>
     </tr>
   <% end %>
-</table>
+  </table>
+</div>
+
+<div class="table">
+  <table class="mytable">
+    <tr>
+      <th class="spec2">Pergunte ao Supervisor</th>
+    </tr>
+  <tr>      
+      <th class="spec">
+        <ul id="lista_posts">      
+         <%=render :partial => "posts", :locals => {:debtor => debtor}%>
+        </ul>
+      </th>
+</tr>
+        <tr>
+          <th class="spec"> 
+            <% remote_form_for(:post, :url => posts_path) do |f| %>
+              <%=f.hidden_field :debtor_id, :value => debtor.id%>
+              <%=f.hidden_field :user_id, :value => session[:id]%>
+              <%=f.text_field :mensage%>
+              <%=f.submit "Enviar comentário", :class => "botao"%>
+            <% end %>
+          </th>
+        </tr>
+  </table>
+</div>

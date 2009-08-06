@@ -1,0 +1,6 @@
+<% (debtor.post.reverse).each do |p|%>
+  <li><strong><%=p.user.name%> (<%=p.user.profile.description%>): </strong><%=p.mensage%></li>
+<% end %>
+<% if debtor.post.empty? %>
+  <li>Nenhuma mensagem foi enviada ainda.</li>
+<% end %>
