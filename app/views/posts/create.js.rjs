@@ -1,2 +1,3 @@
-page.insert_html :top, 'lista_posts', :partial => "posts", :locals => {:debtor => @debtor}
+page.insert_html :bottom, 'lista_posts', :partial => "posts", :locals => {:debtor => @debtor}
+
 
