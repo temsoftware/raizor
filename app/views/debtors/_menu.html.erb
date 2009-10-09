@@ -37,27 +37,7 @@
   </table>
 </div>
 
-<div class="table">
-  <table class="mytable">
-    <tr>
-      <th class="spec2">Pergunte ao Supervisor</th>
-    </tr>
-  <tr>      
-      <th class="spec">
-        <ul id="lista_posts">      
-         <%=render :partial => "posts", :locals => {:post => debtor.post}%>
-        </ul>
-      </th>
-</tr>
-        <tr>
-          <th class="spec"> 
-            <% form_for(:post, :url => posts_path) do |f| %>
-              <%=f.hidden_field :debtor_id, :value => debtor.id%>
-              <%=f.hidden_field :user_id,   :value => session[:id]%>
-              <%=f.text_field :mensage, :value => ""%>
-              <%=f.submit "Enviar comentário", :class => "botao"%>
-            <% end %>
-          </th>
-        </tr>
-  </table>
-</div>
+<!-- AINDA EM FASE DE TESTES
+<%=render :partial => "supervisor", :locals => {:debtor => debtor}%>
+-->
+

@@ -7,8 +7,8 @@
     <tr> 
      <th class="spec">Data</th>
      <th class="spec">Hora</th>
-     <th class="spec">Status</th>
-     <th class="spec">Descrição</th>
+     <th class="spec">Retorno</th>
+     <th class="spec">Descrição de Cobrança</th>
      <th class="spec">Operador</th>
      <th class="spec">Observação</th>
     </tr>
@@ -17,7 +17,7 @@
       <tr>
         <td class="alt"><%=item.created_at.strftime("%d/%m/%Y") %></td>
         <td class="alt"><%=item.created_at.strftime("%H:%M") %></td>
-        <td class="alt"><%=item.status_id%></td>
+        <td class="alt"><%=item.date_callback.strftime("%d/%m/%Y") if item.date_callback %></td>
         <td class="alt"><%=item.status.description%></td>
         <td class="alt"><%=item.user.name%></td>
         <td class="alt"><%=item.description.upcase%></td>

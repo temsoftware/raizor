@@ -109,7 +109,8 @@ ActiveRecord::Schema.define(:version => 20090806184812) do
   add_index "debts", ["user_id"], :name => "fk_debts_users"
 
   create_table "log_debtors", :force => true do |t|
-    t.string   "description", :null => false
+    t.string   "description",   :null => false
+    t.date     "date_callback"
     t.integer  "debtor_id"
     t.integer  "status_id"
     t.integer  "user_id"
