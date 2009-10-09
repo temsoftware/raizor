@@ -8,8 +8,9 @@ class Debt < ActiveRecord::Base
   has_many   :before_deal #Situação do Acordo
   has_one    :type_status, :through => :status
 
-  named_scope :dividas, 
+  named_scope :from_debtor, 
               lambda { |id| { 
-                  :joins => :type_status,
-                  :conditions => ["debtor_id = ? and type_status_id not in (2,6)", id]}}
+                  :joins => {:status => [:type_status]},
+                  :conditions => ["debtor_id = ? and type_status.id not in (2,6)", id], 
+                  :readonly => false}}
 end

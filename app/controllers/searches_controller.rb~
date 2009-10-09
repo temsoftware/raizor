@@ -1,0 +1,16 @@
+class SearchesController < ApplicationController
+  def index
+  end
+
+  def find
+    cpf = params[:search][:busca]
+      unless cpf
+        @search = Debtor.find (:all, :conditions => ["cpf_cnpj = ?", cpf])
+        render :action => "result"
+      end
+  end
+
+  def result
+    
+  end
+end

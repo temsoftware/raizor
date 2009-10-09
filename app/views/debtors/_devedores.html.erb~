@@ -1,0 +1,7 @@
+<% @debtors.each do |item| %>
+  <tr>
+    <th class="spec"><%=link_to item.name, debtor_path(item)%></th>
+    <td class="alt"><%=item.cpf_cnpj%></td>
+    <td bgcolor=<%=item.status.color%>><%=item.status.type_status.description%></td>
+  </tr>
+<% end %>

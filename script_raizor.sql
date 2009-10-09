@@ -5,7 +5,7 @@ insert into profiles (description) values ("SISTEMA");
 insert into profiles (description) values ("ADMINISTRADOR");
 insert into profiles (description) values ("GERÊNCIA");
 insert into profiles (description) values ("SUPERVISOR");
-insert into profiles (description) values ("SUB-SUERVISOR");
+insert into profiles (description) values ("SUB-SUPERVISOR");
 insert into profiles (description) values ("OPERADOR");
 insert into profiles (description) values ("PESQUISA");
 insert into profiles (description) values ("CONSULTA");

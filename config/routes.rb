@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :debtors
 	map.resources :sessions
 	map.resources :posts
+	map.resources :searches
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

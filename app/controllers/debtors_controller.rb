@@ -11,9 +11,9 @@ class DebtorsController < ApplicationController
     @debtor = Debtor.find params[:id]
     @debtor.attributes = params[:debtor]
   
-    @debts = Debt.find_by_sql("select debts.* from debts inner join status on status_id = status.id inner join type_status on type_status.id = status.type_status_id where debts.debtor_id = #{@debtor.id} and type_status.id not in (2,6)")
+  #  @debts = Debt.find_by_sql("select debts.* from debts inner join status on status_id = status.id inner join type_status on type_status.id = status.type_status_id where debts.debtor_id = #{@debtor.id} and type_status.id not in (2,6)")
     
-    @debts.each do |d|
+    Debt.from_debtor(@debtor).each do |d|
       d.status_id = 300
       d.save
     end

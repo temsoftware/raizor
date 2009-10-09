@@ -111,7 +111,10 @@ div.table {
 }
 #mytable {  width: 800px;  padding: 0;  margin: 0;}th {  font: bold 11px Helvetica, sans-serif;  color: #4f6b72;  border-right: 1px solid #C1DAD7;  border-bottom: 1px solid #C1DAD7;  border-top: 1px solid #C1DAD7;  letter-spacing: 2px;  text-transform: uppercase;  text-align: center;  padding: 6px 6px 6px 5px;}
 th.spec {
-  background: #FFFFFF;  border-left: 1px solid #C1DAD7;  border-top: 0;  font: bold 10px  Helvetica, sans-serif;}th.specalt {
+  background: #FFFFFF;  border-left: 1px solid #C1DAD7;  border-top: 0;  font: bold 10px  Helvetica, sans-serif;}
+th.spec2 {
+  background: #FFFFFF;  border-left: 1px solid #C1DAD7;  border-top: 1px solid #C1DAD7;  font: bold 10px  Helvetica, sans-serif;}
+th.specalt {
   background: #FFFFFF;  border-left: 1px solid #C1DAD7;  border-top: 0;  font: bold 10px Helvetica, sans-serif;
   text-align: left;}
 td {  border-right: 1px solid #C1DAD7;  border-bottom: 1px solid #C1DAD7;  padding: 6px 6px 6px 12px;  color: #000000;
@@ -153,5 +156,9 @@ th li {
 	list-style-type: none;
   color: #000000;
   font: 8px sans-serif;
+}
+
+th.li.admin {
+
 }
 

@@ -1,14 +1,14 @@
 class CreateStatus < ActiveRecord::Migration
   def self.up
     create_table :status, :primary_key => :id do |t|
-      t.column :description, :string,  :null => :false
-      t.column :finale,      :string,  :null => :false
-      t.column :date,        :string,  :default => :null
-      t.column :color,       :string,  :default => "#FFFFFF"
-      t.column :priority,    :integer, :null => :false
+      t.string  :description, :null =>    :false
+      t.string  :finale,      :null =>    :false
+      t.string  :date,        :default => :null
+      t.string  :color,       :default => "#FFFFFF"
+      t.integer :priority,    :null =>    :false
 
-      t.column :type_status_id, :integer
-      t.column :profile_id,     :integer
+      t.references :type_status
+      t.references :profile
 
       t.timestamps
     end
